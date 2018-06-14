@@ -13,13 +13,17 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    this.setState({ board: new Board()});
+    this.setState({
+      board: new Board(),
+      height: 7
+    });
   }
 
   render() {
     return (
       <div>
         <div className="title">Connect Four</div>
+        <BoardView board={this.state.board.grid} height={this.state.height} />
       </div>
     );
   }

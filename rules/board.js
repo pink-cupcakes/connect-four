@@ -1,6 +1,6 @@
 export default class Board {
   constructor() {
-    this.grid = [[], [], [], [], []];
+    this.grid = [[], [], [], [], [], [], []];
     this.player = ''
   };
 
