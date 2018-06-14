@@ -1,0 +1,3 @@
+const checkHorizontal = (arr) => {
+  
+}
