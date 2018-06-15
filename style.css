@@ -36,9 +36,9 @@ button:active {
 
 .board {
   width: 60%;
-  padding: 10px;
   display: flex;
   justify-content: center;
+  outline: solid 2px rgba(0, 0, 0, 0.377);
 }
 
 /*Styling for current player and completed game*/
@@ -60,7 +60,6 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: solid 1px black;
   background: #1E90FF
 }
 
