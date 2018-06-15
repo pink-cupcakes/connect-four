@@ -1,6 +1,6 @@
 module.exports = {
   entry: [
-    './index.jsx'
+    './board.jsx'
   ],
   module: {
     rules: [

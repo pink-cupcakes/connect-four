@@ -1,0 +1,94 @@
+body, h1, h3, button {
+  background-color: #659DBD;
+  color: #FBEEC1;
+  font-family: 'Press Start 2P', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  margin: 10px;
+  background-color: #FBEEC1;
+  color: black;
+  cursor: pointer;
+  outline: solid 2px white;
+}
+
+button:active {
+  outline: solid 2px grey;
+}
+
+.title {
+  text-align: center;
+}
+
+.gameView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board {
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.completedMessage {
+  padding: 10px;
+}
+
+.column {
+  width: 15%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.square {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: solid 1px black;
+  background: #1E90FF
+}
+
+.white {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background: white;
+}
+
+.red {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background: red;
+}
+
+.yellow {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background: yellow;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  margin: 0px;
+}
