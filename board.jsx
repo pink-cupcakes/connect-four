@@ -2,29 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import BoardColumn from './components/boardColumn.jsx';
-import {winConditions} from './rules/winConditions.js';
+import {gameOver} from './rules/winConditions.js';
 
 import css from './style.css';
 
 class BoardView extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      grid: [[], [], [], [], [], [], []],
-      player: 'red',
-      completed: false
-    };
+    this.state = {};
 
     this.nextMove = this.nextMove.bind(this);
   }
 
   nextMove(position) {
+    /*Add new player move to current grid*/
     let updateGrid = this.state.grid.map(ele => ele);
     updateGrid[position].push(this.state.player);
     this.setState({grid: updateGrid});
-    if (winConditions(this.state.grid, position, this.state.player)) {
+
+    /*Check game status for updated grid*/
+    if (gameOver(this.state.grid, position, this.state.player)) {
+      /*Update state if game is finished, retain current player state for 'win message'.*/
       this.setState({completed: true});
     } else {
+      /*Update player to next player if the game is not finished*/
       let updatePlayer = (this.state.player === 'red') ? 'yellow' : 'red';
       this.setState({player: updatePlayer});
     }
@@ -42,6 +43,10 @@ class BoardView extends React.Component {
       player: 'red',
       completed: false
     })
+  }
+
+  componentWillMount() {
+    this.startOver();
   }
 
   render() {

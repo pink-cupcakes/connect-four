@@ -21,10 +21,12 @@ button:active {
   outline: solid 2px grey;
 }
 
+/*Stying for Connect Four title*/
 .title {
   text-align: center;
 }
 
+/*Styling for parent board app*/
 .gameView {
   display: flex;
   justify-content: center;
@@ -39,16 +41,19 @@ button:active {
   justify-content: center;
 }
 
+/*Styling for current player and completed game*/
 .completedMessage {
   padding: 10px;
 }
 
+/*Styling for each board column*/
 .column {
   width: 15%;
   display: flex;
   flex-direction: column-reverse;
 }
 
+/*Styling for each square*/
 .square {
   width: 100%;
   height: 100px;
@@ -84,6 +89,7 @@ button:active {
   cursor: pointer;
 }
 
+/*Styling any logos on page*/
 .icon {
   font-size: 40px;
   display: flex;

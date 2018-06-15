@@ -1,5 +1,7 @@
 # Introduction
-This is a classic game of connect-four. For the official rules and instructions, please see: https://www.hasbro.com/common/instruct/ConnectFour.PDF
+Welcome to Connect Four! It's a two player game with the objective of lining up four of the same color pieces in any direction. If the game ends or if you want to start over, just hit start over. Now get on over to playing!
+
+For the official rules and instructions, please see: https://www.hasbro.com/common/instruct/ConnectFour.PDF
 
 # Getting started
 
