@@ -35,7 +35,7 @@ button:active {
 }
 
 .board {
-  width: 60%;
+  width: 855px;
   display: flex;
   justify-content: center;
   outline: solid 2px rgba(0, 0, 0, 0.377);
