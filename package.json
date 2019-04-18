@@ -2,7 +2,9 @@
   "name": "connect-four",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://pink-cupcakes.github.io/connect-four/",
   "scripts": {
+    "deploy": "webpack-dev-server --config ./webpack.config.js --watch",
     "start": "webpack-dev-server --config ./webpack.config.js --watch"
   },
   "author": "",
@@ -21,6 +23,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.11",
+    "gh-pages": "^2.0.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "style-loader": "^0.21.0",
