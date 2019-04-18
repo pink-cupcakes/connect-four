@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom';
 import BoardColumn from './components/boardColumn.jsx';
 import {gameOver} from './rules/winConditions.js';
 
-import css from './style.css';
-
 class BoardView extends React.Component {
   constructor(props) {
     super(props);
